@@ -1,0 +1,50 @@
+controller_manager_ns: ''
+controller_list:
+  - name: pepper_dcm/LeftArm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - LShoulderPitch
+      - LShoulderRoll
+      - LElbowYaw
+      - LElbowRoll
+      - LWristYaw
+  - name: pepper_dcm/RightArm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+      - RWristYaw
+  - name: pepper_dcm/Head_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - HeadYaw
+      - HeadPitch
+  - name: pepper_dcm/Pelvis_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - HipRoll
+      - HipPitch
+      - KneePitch
+  - name: pepper_dcm/LeftHand_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - LHand
+  - name: pepper_dcm/RightHand_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - RHand
+

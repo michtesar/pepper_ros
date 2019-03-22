@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=0.9.4
+Name=Uninstall Pepper meshes
+Comment=Uninstall
+Icon=
+Exec=/home/michael/pepper_ws/src/pepper_meshes/uninstall
+Terminal=false
+Path=/home/michael/pepper_ws/src/pepper_meshes

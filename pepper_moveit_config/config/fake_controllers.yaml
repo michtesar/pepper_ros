@@ -1,0 +1,33 @@
+controller_list:
+  - name: fake_right_arm_controller
+    joints:
+      - RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+      - RWristYaw
+  - name: fake_left_arm_controller
+    joints:
+      - LShoulderPitch
+      - LShoulderRoll
+      - LElbowYaw
+      - LElbowRoll
+      - LWristYaw
+  - name: fake_right_hand_controller
+    joints:
+      - RHand
+  - name: fake_left_hand_controller
+    joints:
+      - LHand
+  - name: fake_base_controller
+    joints:
+      - virtual_odom
+  - name: fake_head_controller
+    joints:
+      - HeadYaw
+      - HeadPitch
+  - name: fake_pelvis_controller
+    joints:
+      - HipRoll
+      - HipPitch
+      - KneePitch
