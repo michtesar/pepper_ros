@@ -1,0 +1,9 @@
+<launch>
+
+	<param name="rviz" type="bool" value="false" />
+
+	<include file="$(find pepper_gazebo_plugin)/launch/pepper_gazebo.launch" />
+	
+	<include file="$(find pepper_moveit_config)/launch/moveit_planner.launch" />	
+	
+</launch>

@@ -1,0 +1,7 @@
+<launch>
+  <arg name="version" default="1.0" />
+  <include file="$(find pepper_description)/launch/pepper_upload.launch">
+    <arg name="version" value="$(arg version)"/>
+  </include>
+  <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher" />
+</launch>

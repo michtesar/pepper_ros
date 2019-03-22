@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <name>pepper_description</name>
+  <version>0.1.10</version>
+  <description>The pepper_description package</description>
+
+  <author>Karsten Knese</author>
+  <maintainer email="surya.ambrose@gmail.com">Surya Ambrose</maintainer>
+  <maintainer email="natalia.lyubova@gmail.com">Natalia Lyubova</maintainer>
+  <maintainer email="mchamoux@softbankrobotics.com">Marine Chamoux</maintainer>
+
+  <license>Apache 2.0</license>
+
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>

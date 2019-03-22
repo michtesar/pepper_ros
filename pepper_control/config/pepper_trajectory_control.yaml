@@ -1,0 +1,53 @@
+pepper_dcm:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+
+  # Controllers ------------------------------------------------
+  LeftArm_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - LShoulderPitch
+      - LShoulderRoll
+      - LElbowYaw
+      - LElbowRoll
+      - LWristYaw
+  RightArm_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+      - RWristYaw
+  Head_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - HeadYaw
+      - HeadPitch
+  Pelvis_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - HipRoll
+      - HipPitch
+      - KneePitch
+  LeftHand_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - LHand
+  RightHand_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - RHand
+
+  # Effort Controllers ---------------------------------------
+  WheelFL_controller:
+    type: effort_controllers/JointEffortController
+    joint: WheelFL
+  WheelFR_controller:
+    type: effort_controllers/JointEffortController
+    joint: WheelFR
+  WheelB_controller:
+    type: effort_controllers/JointEffortController
+    joint: WheelB
