@@ -227,87 +227,87 @@
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="LFinger12_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="LFinger13_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="LFinger21_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="LFinger22_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="LFinger23_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
 
     <gazebo reference="LFinger31_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="LFinger32_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="LFinger33_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="LFinger41_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="LFinger42_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="LFinger43_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
 
     <gazebo reference="LThumb1_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="LThumb2_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo> 
 
     <gazebo reference="Hip">
