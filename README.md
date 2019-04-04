@@ -9,7 +9,7 @@ In Aldebaran code Pepper was falling after running simulation and with ROS Kinet
 </p>
 
 ## Install
-
+```sh
 mkdir -p ~/pepper_ws/src
 cd ~/pepper_ws/src
 git clone git@github.com:michtesar/pepper_ros.git
