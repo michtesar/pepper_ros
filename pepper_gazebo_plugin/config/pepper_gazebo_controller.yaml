@@ -40,14 +40,14 @@ gazebo_ros_control:
       i_clamp: 0.2
       antiwindup: false
       publish_state: true
-    HandR:
+    RHand:
       p: 100
       i: 0.1
       d: 1.0
       i_clamp: 0.2
       antiwindup: false
       publish_state: true
-    HandL:
+    LHand:
       p: 100
       i: 0.1
       d: 1.0
