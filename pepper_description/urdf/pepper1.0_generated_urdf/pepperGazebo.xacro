@@ -55,20 +55,20 @@
         <plugin name="mimic_${side}Finger${num}1" filename="libroboticsgroup_gazebo_mimic_joint_plugin.so">
             <joint>${side}Hand</joint>
             <mimicJoint>${side}Finger${num}1</mimicJoint>
-            <multiplier>-${PI/4}</multiplier>
-            <offset>${PI/4}</offset>
+            <multiplier>1</multiplier>
+            <offset>0</offset>
         </plugin>
         <plugin name="mimic_${side}Finger${num}2" filename="libroboticsgroup_gazebo_mimic_joint_plugin.so">
             <joint>${side}Hand</joint>
             <mimicJoint>${side}Finger${num}2</mimicJoint>
-            <multiplier>-${PI/4}</multiplier>
-            <offset>${PI/4}</offset>
+            <multiplier>1</multiplier>
+            <offset>0</offset>
         </plugin>
         <plugin name="mimic_${side}Finger${num}3" filename="libroboticsgroup_gazebo_mimic_joint_plugin.so">
             <joint>${side}Hand</joint>
             <mimicJoint>${side}Finger${num}3</mimicJoint>
-            <multiplier>-${PI/4}</multiplier>
-            <offset>${PI/4}</offset>
+            <multiplier>1</multiplier>
+            <offset>0</offset>
         </plugin>
     </xacro:macro> 
     <!-- Thumbs -->
@@ -76,14 +76,14 @@
         <plugin name="${side}Thumb1" filename="libroboticsgroup_gazebo_mimic_joint_plugin.so">
             <joint>${side}Hand</joint>
             <mimicJoint>${side}Thumb1</mimicJoint>
-            <multiplier>-${PI/4}</multiplier>
-            <offset>${PI/4}</offset>
+            <multiplier>1</multiplier>
+            <offset>0</offset>
         </plugin>
         <plugin name="${side}Thumb2" filename="libroboticsgroup_gazebo_mimic_joint_plugin.so">
             <joint>${side}Hand</joint>
             <mimicJoint>${side}Thumb2</mimicJoint>
-            <multiplier>-${PI/4}</multiplier>
-            <offset>${PI/4}</offset>
+            <multiplier>1</multiplier>
+            <offset>0</offset>
         </plugin>
     </xacro:macro>
     <!-- GAZEBO ROS CONTROL -->
@@ -107,9 +107,9 @@
 
         <xacro:ThumbMimics side="L"/>
         <xacro:ThumbMimics side="R"/>
-
+<!-- 
         <xacro:DisabledLinks side="L" side_small="l"/>
-        <xacro:DisabledLinks side="R" side_small="r"/> 
+        <xacro:DisabledLinks side="R" side_small="r"/>  -->
     </gazebo>
     <!-- END OF GAZEBO ROS CONTROL PLUGIN -->
     <!-- GAZEBO MATERIALS -->
@@ -183,7 +183,7 @@
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
 
     <gazebo reference="RShoulder">
@@ -220,7 +220,7 @@
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
 
     <gazebo reference="LFinger11_link">
@@ -361,86 +361,86 @@
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="RFinger12_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="RFinger13_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="RFinger21_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="RFinger22_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="RFinger23_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="RFinger31_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="RFinger32_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="RFinger33_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="RFinger41_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="RFinger42_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="RFinger43_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
 
     <gazebo reference="RThumb1_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="RThumb2_link">
         <mu1>0.5</mu1>
         <mu2>0.5</mu2>
         <selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff>
+        <turnGravityOff>false</turnGravityOff>
     </gazebo>
 
 <!--
