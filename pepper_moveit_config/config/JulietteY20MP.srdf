@@ -55,12 +55,62 @@
         <link name="LThumb2_link" />
         <joint name="LHand" />
     </group>
+    <group name="both_hands">
+        <group name="left_hand" />
+        <group name="right_hand" />
+    </group>
     <group name="base">
         <joint name="virtual_odom" />
     </group>
     <group name="head">
         <chain base_link="torso" tip_link="Head" />
     </group>
+    <group_state name="down" group="left_arm">
+        <joint name="LShoulderPitch" value="1.57075" />
+        <joint name="LShoulderRoll" value="0" />
+        <joint name="LElbowYaw" value="-1.57075" />
+        <joint name="LElbowRoll" value="0" />
+        <joint name="LWristYaw" value="0" />
+    </group_state>
+    <group_state name="down" group="right_arm">
+        <joint name="RShoulderPitch" value="1.57075" />
+        <joint name="RShoulderRoll" value="0" />
+        <joint name="RElbowYaw" value="1.57075" />
+        <joint name="RElbowRoll" value="0" />
+        <joint name="RWristYaw" value="0" />
+    </group_state>
+    <group_state name="down" group="both_arms">
+        <joint name="LShoulderPitch" value="1.57075" />
+        <joint name="LShoulderRoll" value="0" />
+        <joint name="LElbowYaw" value="-1.57075" />
+        <joint name="LElbowRoll" value="0" />
+        <joint name="LWristYaw" value="0" />
+        <joint name="RShoulderPitch" value="1.57075" />
+        <joint name="RShoulderRoll" value="0" />
+        <joint name="RElbowYaw" value="1.57075" />
+        <joint name="RElbowRoll" value="0" />
+        <joint name="RWristYaw" value="0" />
+    </group_state>
+    <group_state name="closed" group="left_hand">
+        <joint name="LHand" value="0.02" />
+    </group_state>
+    <group_state name="open" group="left_hand">
+        <joint name="LHand" value="0.98" />
+    </group_state>
+    <group_state name="closed" group="right_hand">
+        <joint name="RHand" value="0.02" />
+    </group_state>
+    <group_state name="open" group="right_hand">
+        <joint name="RHand" value="0.98" />
+    </group_state>
+    <group_state name="closed" group="both_hands">
+        <joint name="RHand" value="0.02" />
+        <joint name="LHand" value="0.02" />
+    </group_state>
+    <group_state name="open" group="both_hands">
+        <joint name="RHand" value="0.98" />
+        <joint name="LHand" value="0.98" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="left_eef" parent_link="l_wrist" group="left_hand" />
     <end_effector name="right_eef" parent_link="r_wrist" group="right_hand" />
